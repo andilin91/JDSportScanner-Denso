@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zebra.adc.barcodedemo.HomeActivity" >
+
+    <item
+        android:id="@+id/action_change"
+        android:showAsAction="always"
+        android:title="change"
+        android:icon="@drawable/btn_wh"/>
+    <item
+        android:id="@+id/action_logout"
+        android:showAsAction="always"
+        android:title="logout"
+        android:icon="@drawable/btn_logout"/>
+
+</menu>

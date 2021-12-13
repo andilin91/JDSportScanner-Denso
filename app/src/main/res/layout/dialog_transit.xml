@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn902"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_grey"
+        android:text="902"
+        android:textColor="@color/textwhite"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn917"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_grey"
+        android:text="917"
+        android:textColor="@color/textwhite"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn921"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/btn_grey"
+        android:text="921"
+        android:textColor="@color/textwhite"
+        android:textStyle="bold" />
+
+</LinearLayout>

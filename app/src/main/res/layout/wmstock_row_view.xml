@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <!-- A CardView that contains a TextView -->
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        card_view:cardBackgroundColor="@color/darkgrey"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtIdMat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="500009000"
+                    android:textColor="@color/textwhite"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtMatDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtIdMat"
+                    android:layout_marginTop="3dp"
+                    android:text="BODELAC 9000 BASE 1"
+                    android:textColor="@color/textgrey"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/textgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="22">
+
+                    <TextView
+                        android:id="@+id/txtEan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Batch/Bin"
+                        android:textColor="@color/textgrey"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtBatch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtEan"
+                        android:layout_marginTop="3dp"
+                        android:text="500009000"
+                        android:textColor="@color/textwhite"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtBatch"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtBin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="104-05-1"
+                            android:textColor="@color/textwhite"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text=" ("
+                            android:textColor="@color/textwhite"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtStrTyp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="FG1"
+                            android:textColor="@color/textwhite"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text=")"
+                            android:textColor="@color/textwhite"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="39">
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AvailQ"
+                        android:textColor="@color/textgrey"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtAvailableQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt3"
+                        android:layout_marginTop="3dp"
+                        android:text="100"
+                        android:textColor="@color/textwhite"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtUom1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtAvailableQty"
+                        android:text="KG"
+                        android:textColor="@color/textgrey"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="39">
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AllocQ"
+                        android:textColor="@color/textgrey"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtAllocatedQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt4"
+                        android:layout_marginTop="3dp"
+                        android:text="100"
+                        android:textColor="@color/textwhite"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtUom2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtAllocatedQty"
+                        android:text="KG"
+                        android:textColor="@color/textgrey"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- TextView Nama Mahasiwa -->
+        <TextView
+            android:id="@+id/txtDocNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="1234567" />
+
+        <!-- TextView Npm Mahasiswa -->
+        <TextView
+            android:id="@+id/txtPostingDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="02" />
+
+        <!-- TextView NoHp Mahasiswa -->
+        <TextView
+            android:id="@+id/txtPlant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:text="01" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.zebra.adc.barcodedemo.HomeActivity" >
+
+    <item
+        android:id="@+id/action_confirm"
+        android:showAsAction="always"
+        android:title="@string/confirm"
+        />
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtNamaMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PNFG TO FG(921)"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_weight="90"
+            android:textColor="@color/textwhite" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+       
+    </LinearLayout>
+
+</LinearLayout>

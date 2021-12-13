@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background" >
+
+
+    <TableRow
+        android:id="@+id/tr"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="16dp"
+            android:layout_margin="5dp"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </TableRow>
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/tr"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/textgrey" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/imgReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/reset" />
+        <ImageButton
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@android:drawable/ic_delete" />
+
+        <EditText
+            android:id="@+id/edtBatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnNext"
+            android:layout_alignRight="@+id/btnNext"
+            android:layout_below="@+id/imgReset"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_to"
+            android:textColor="@color/md_white_1000"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtBatch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_blue"
+            android:text="Scan"
+            android:textAllCaps="true"
+            android:textColor="@color/textwhite"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnScan"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_grey"
+            android:enabled="false"
+            android:text="NEXT"
+            android:textColor="@color/textwhite"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
