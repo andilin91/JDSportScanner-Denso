@@ -45,6 +45,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.nio.charset.Charset;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.X509Certificate;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.ParseException;
@@ -56,6 +59,13 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 public class Helper {
 	
@@ -171,6 +181,7 @@ public class Helper {
         //kalo post, kita kasih class k back end
         int flag = 0;
         ResponseEntity<?> responseEntity = null;
+        trustSSL();
         while (flag == 0) {
             flag = 1;
             RestTemplate restTemplate = new RestTemplate();
@@ -203,6 +214,43 @@ public class Helper {
                 bool = true;
         }
         return bool;
+    }
+
+    public static void trustSSL(){
+        // Create a trust manager that does not validate certificate chains
+        TrustManager[] trustAllCerts = new TrustManager[] {new X509TrustManager() {
+            public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+                return null;
+            }
+            public void checkClientTrusted(X509Certificate[] certs, String authType) {
+            }
+            public void checkServerTrusted(X509Certificate[] certs, String authType) {
+            }
+        }
+        };
+
+        // Install the all-trusting trust manager
+        SSLContext sc = null; // Add in try catch block if you get error.
+        try {
+            sc = SSLContext.getInstance("SSL");
+            sc.init(null, trustAllCerts, new java.security.SecureRandom()); // Add in try catch block if you get error.
+            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+            // Create all-trusting host name verifier
+            HostnameVerifier allHostsValid = new HostnameVerifier() {
+                public boolean verify(String hostname, SSLSession session) {
+                    return true;
+                }
+            };
+
+            // Install the all-trusting host verifier
+            HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (KeyManagementException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public static boolean isEquals(Object obj1, Object obj2) {

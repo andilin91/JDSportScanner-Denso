@@ -462,6 +462,7 @@ public class BaseActivity extends AppCompatActivity implements BarcodeManager.Ba
         progress.setIndeterminate(true);
         progress.setCancelable(false);
         progress.setCanceledOnTouchOutside(false);
+//        Helper.trustSSL();
 
     }
 

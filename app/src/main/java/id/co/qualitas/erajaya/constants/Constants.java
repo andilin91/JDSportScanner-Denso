@@ -46,7 +46,10 @@ public class Constants {
 	//	public static final String URL = "http://166.0.0.150:8383/";
 //	public static final String URL = "http://192.168.100.12:9696/";
 //	public static final String URL = "http://52.187.124.235:9696/";
-	public static final String URL = "http://52.74.70.245:9696/";
+//	public static final String URL = "http://52.74.70.245:9696/";
+//	public static final String URL = "http://52.77.61.5:9696/";
+	public static final String URL = "https://eanqas.erajaya.com/";
+
 
 	//	public static final String URL = "http://192.168.3.103:8282/";
 	public static final String PREF_NAME = "Qualitas";
