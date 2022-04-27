@@ -29,6 +29,11 @@
         <entry key="..\:/Android/Erajaya-EAN/app/src/main/res/layout/bs_header_receiving.xml" value="0.25" />
         <entry key="..\:/Android/Erajaya-EAN/app/src/main/res/layout/row_view_item.xml" value="0.67" />
         <entry key="..\:/Android/Erajaya-EAN/app/src/main/res/layout/row_view_receiving_detail.xml" value="0.29464285714285715" />
+        <entry key="..\:/Android/JDSportScanner-Denso/app/src/main/res/layout/activity_create_receiving.xml" value="0.48" />
+        <entry key="..\:/Android/JDSportScanner-Denso/app/src/main/res/layout/activity_detail_issuing.xml" value="0.48" />
+        <entry key="..\:/Android/JDSportScanner-Denso/app/src/main/res/layout/activity_detail_receiving.xml" value="0.5751633986928104" />
+        <entry key="..\:/Android/JDSportScanner-Denso/app/src/main/res/layout/activity_header_receiving.xml" value="0.48" />
+        <entry key="..\:/Android/JDSportScanner-Denso/app/src/main/res/layout/activity_menu.xml" value="0.44375" />
       </map>
     </option>
   </component>

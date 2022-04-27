@@ -39,6 +39,7 @@ public class Constants {
 	public static final String TOKEN = "TOKEN";
 	public static final String TRANSFER_ORDER_LIST = "to_list";
 	public static final String TRANSFER_ORDER = "to";
+	public static final String VERSION_NAME = "JDSport-EAN v";
 	//    public static final String URL = "http://132.0.74.60:8282/";
 //    public static final String URL = "http://132.0.74.60:8383/";
 //    public static final String URL = "http://135.0.74.60:8282/";

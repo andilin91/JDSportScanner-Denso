@@ -68,16 +68,14 @@
 
                     <TableLayout
                         android:id="@+id/tableLayout"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="8dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/textView4"
@@ -95,15 +93,14 @@
 
                             <TextView
                                 android:id="@+id/txtRevDocNo"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="8035587"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/textView3"
@@ -121,9 +118,10 @@
 
                             <TextView
                                 android:id="@+id/txtPlant"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="02"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 

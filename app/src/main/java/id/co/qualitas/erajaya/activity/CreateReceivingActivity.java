@@ -112,15 +112,15 @@ public class CreateReceivingActivity extends BaseActivity {
                     @Override
                     public void onClick(View view) {
                         String plant, sloc, movType;
-                        plant = listPlant.get(spPlant.getSelectedItemPosition());
-                        sloc = listSloc.get(spSloc.getSelectedItemPosition());
-                        movType = listMovTyp.get(spMovType.getSelectedItemPosition());
+                        plant = listPlant.get(spPlant.getSelectedItemPosition()).split(" - ")[0];
+                        sloc = listSloc.get(spSloc.getSelectedItemPosition()).split(" - ")[0];
+                        movType = listMovTyp.get(spMovType.getSelectedItemPosition()).split(" - ")[0];
                         if (edtRecvNo.getText().toString().isEmpty()) {
                             Snackbar.make(view, "Receiving doc number cannot empty", Snackbar.LENGTH_SHORT).show();
-                        } else if (edtRefDocNo.getText().toString().isEmpty()) {
-                            Snackbar.make(view, "Ref doc no. cannot empty", Snackbar.LENGTH_SHORT).show();
-                        } else if (edtHeaderText.getText().toString().isEmpty()) {
-                            Snackbar.make(view, "Header Text cannot empty", Snackbar.LENGTH_SHORT).show();
+//                        } else if (edtRefDocNo.getText().toString().isEmpty()) {
+//                            Snackbar.make(view, "Ref doc no. cannot empty", Snackbar.LENGTH_SHORT).show();
+//                        } else if (edtHeaderText.getText().toString().isEmpty()) {
+//                            Snackbar.make(view, "Header Text cannot empty", Snackbar.LENGTH_SHORT).show();
                         } else if (listMaterial.size() == 0) {
                             Snackbar.make(view, "Item line cannot empty", Snackbar.LENGTH_SHORT).show();
                         } else {
@@ -257,15 +257,13 @@ public class CreateReceivingActivity extends BaseActivity {
 
     private void setData() {
         for (Plant plant : user.getPlant()) {
-            listPlant.add(plant.getId());
+            listPlant.add(plant.getId()+ " - " + plant.getName());
         }
-//        listSloc = new ArrayList<>();
         for (Sloc sloc : user.getSloc()) {
-            listSloc.add(sloc.getId());
+            listSloc.add(sloc.getId()+ " - " + sloc.getName());
         }
-//        listMovTyp = new ArrayList<>();
         for (MovType movType : user.getMovType()) {
-            listMovTyp.add(movType.getId());
+            listMovTyp.add(movType.getId()+ " - " + movType.getName());
         }
     }
 

@@ -453,6 +453,7 @@ public class BaseActivity extends AppCompatActivity implements BarcodeManager.Ba
 
 
     public void init() {
+        Helper.trustSSL();
         user = (UserResponse) Helper.getItemParam(Constants.USER_DETAIL);
         context = this.getApplicationContext();
         rootView = findViewById(android.R.id.content);

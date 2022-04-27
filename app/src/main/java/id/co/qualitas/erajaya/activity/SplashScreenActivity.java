@@ -32,7 +32,7 @@ public class SplashScreenActivity extends Activity {
 		session = new SessionManager(getApplicationContext());
 		txtVersion = findViewById(R.id.txtVersion);
 		String versionName = BuildConfig.VERSION_NAME;
-		txtVersion.setText("JDSport-EAN Version " + versionName);
+		txtVersion.setText(Constants.VERSION_NAME + versionName);
 		if (session.isUrlEmpty()) {
 			Map<String, String> urlSession = session.getUrl();
 			Helper.setItemParam(Constants.URL,

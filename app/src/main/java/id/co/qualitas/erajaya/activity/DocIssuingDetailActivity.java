@@ -16,6 +16,7 @@ import id.co.qualitas.erajaya.constants.Constants;
 import id.co.qualitas.erajaya.databinding.ActivityDetailIssuingBinding;
 import id.co.qualitas.erajaya.helper.Helper;
 import id.co.qualitas.erajaya.model.Issuing;
+import id.co.qualitas.erajaya.model.Plant;
 import one.util.streamex.StreamEx;
 
 public class DocIssuingDetailActivity extends BaseActivity {
@@ -36,12 +37,26 @@ public class DocIssuingDetailActivity extends BaseActivity {
     }
 
     private void initialize() {
+        Plant plant = user.getPlant().stream()
+                .filter(e -> e.getId().equals(issuingDetailList.get(0).getIdPlant()))
+                .findAny()
+                .orElse(null);
+//        Sloc sloc = user.getSloc().stream()
+//                .filter(e -> e.getId().equals(issuingDetailList.get(0).getIdSloc()))
+//                .findAny()
+//                .orElse(null);
+//        MovType movType = user.getMovType().stream()
+//                .filter(e -> e.getId().equals(issuingDetailList.get(0).getMovementType()))
+//                .findAny()
+//                .orElse(null);
+
+
+        binding.txtPlant.setText(plant != null ? plant.getId() + " - " + plant.getName() : issuingDetailList.get(0).getIdPlant());
+//        binding.txtMovTyp.setText(movType != null ? movType.getId() + " - " + movType.getName() : issuingDetailList.get(0).getMovementType());
+//        binding.txtSloc.setText(sloc != null ? sloc.getId() + " - " + plant.getName() : issuingDetailList.get(0).getIdSloc());
         binding.txtRevDocNo.setText(issuingDetailList.get(0).getDocNo());
-        binding.txtPlant.setText(issuingDetailList.get(0).getIdPlant());
-        binding.txtMovTyp.setText(issuingDetailList.get(0).getMovementType());
-        binding.txtSloc.setText(issuingDetailList.get(0).getIdSloc());
-        binding.txtRefDocNo.setText(issuingDetailList.get(0).getRefDocNo());
-        binding.txtHeaderText.setText(issuingDetailList.get(0).getHeaderText());
+//        binding.txtRefDocNo.setText(issuingDetailList.get(0).getRefDocNo());
+//        binding.txtHeaderText.setText(issuingDetailList.get(0).getHeaderText());
         binding.edtSearchRev.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {

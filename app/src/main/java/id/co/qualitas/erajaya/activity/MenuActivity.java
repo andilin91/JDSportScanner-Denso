@@ -99,7 +99,9 @@ public class MenuActivity extends BaseActivity {
         });
         TextView txtVersion = findViewById(R.id.txtVersion);
         String versionName = BuildConfig.VERSION_NAME;
-        txtVersion.setText("JDSport-EAN Version " + versionName);
+        txtVersion.setText(Constants.VERSION_NAME + versionName);
+        TextView txtName = findViewById(R.id.txtName);
+        txtName.setText("Welcome, " + user.getUser().getFullname());
     }
 
     public void showBSChangePass() {

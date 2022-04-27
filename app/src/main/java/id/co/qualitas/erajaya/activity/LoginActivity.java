@@ -109,7 +109,7 @@ public class LoginActivity extends BaseActivity implements BarcodeManager.Barcod
         edtPassword = findViewById(R.id.edtPassword);
         TextView txtVersion = findViewById(R.id.txtVersion);
         String versionName = BuildConfig.VERSION_NAME;
-        txtVersion.setText("JDSport-EAN Version " + versionName);
+        txtVersion.setText(Constants.VERSION_NAME + versionName);
         txtSetting = findViewById(R.id.setting);
         btnLogin.setOnClickListener(new View.OnClickListener() {
 

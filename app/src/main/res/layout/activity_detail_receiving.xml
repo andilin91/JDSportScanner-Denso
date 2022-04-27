@@ -75,9 +75,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/textView4"
@@ -95,16 +93,14 @@
 
                             <TextView
                                 android:id="@+id/txtRevDocNo"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="8035587"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
+                        <TableRow>
                             <TextView
                                 android:id="@+id/textView3"
                                 android:layout_width="wrap_content"
@@ -121,15 +117,14 @@
 
                             <TextView
                                 android:id="@+id/txtPlant"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="02"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/textView5"
@@ -147,15 +142,14 @@
 
                             <TextView
                                 android:id="@+id/txtMovTyp"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="05"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/text1"
@@ -173,15 +167,14 @@
 
                             <TextView
                                 android:id="@+id/txtSloc"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="05"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/text3"
@@ -199,15 +192,14 @@
 
                             <TextView
                                 android:id="@+id/txtRefDocNo"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="05"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
 
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                        <TableRow>
 
                             <TextView
                                 android:id="@+id/text5"
@@ -225,9 +217,10 @@
 
                             <TextView
                                 android:id="@+id/txtHeaderText"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="05"
+                                android:layout_weight="1"
+                                android:text="3131313"
                                 android:textColor="@color/black" />
                         </TableRow>
                     </TableLayout>

@@ -27,7 +27,7 @@
     <string name="Params">Parameters</string>
     <string name="Turbo">Turbo</string>
 
-    <string name="app_name">JDSport-EAN DEV</string>
+    <string name="app_name">JDSport-EAN</string>
     <!--<string name="app_name">NPS WM</string>-->
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_transfer_order_adapter">TransferOrderAdapter</string>
